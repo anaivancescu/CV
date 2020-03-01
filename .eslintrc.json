@@ -1,0 +1,40 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-cycles": 0,
+    "no-shadow": [
+      0,
+      {
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "allow": []
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-restricted-syntax": "off",
+    "react/prop-types": [
+      2,
+      {
+        "ignore": [
+          "children"
+        ]
+      }
+    ]
+  },
+  "env": {
+    "jest": true
+  }
+}
