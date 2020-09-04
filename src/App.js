@@ -3,8 +3,7 @@ import { Button, Card, Nav } from 'react-bootstrap';
 
 import Chat from './Chat';
 import About from './About';
-
-const pdf = require('./res/cv.pdf');
+import Chess from './Chess';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,8 +19,11 @@ class App extends React.Component {
     let page = null;
     if (this.state.current_page === 'chat') {
       page = (<Chat />);
-    } else { page = (<About />); }
-
+    } else if (this.state.current_page === 'chess') {
+      page = (<Chess />);
+    } else {
+      page = (<About />);
+    }
 
     return (
       <div>
@@ -41,13 +43,28 @@ class App extends React.Component {
           </Nav.Item>
           <Nav.Item
             style={{ margin: 'auto' }}
-            onClick={() => window.open(pdf, '_blank')}
+            onClick={() => {
+              this.setState({ current_page: 'about' });
+            }}
           >
             <Nav.Link style={{
               bold: 'true', 'font-size': 34, padding: '50px', color: 'palevioletred',
             }}
             >
-              CV-ul meu
+              CV
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item
+            style={{ margin: 'auto' }}
+            onClick={() => {
+              this.setState({ current_page: 'chess' });
+            }}
+          >
+            <Nav.Link style={{
+              bold: 'true', 'font-size': 34, padding: '50px', color: 'palevioletred',
+            }}
+            >
+              Chess
             </Nav.Link>
           </Nav.Item>
         </Nav>
