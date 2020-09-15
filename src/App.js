@@ -5,6 +5,8 @@ import Chat from './Chat';
 import About from './About';
 import Chess from './Chess';
 
+const pdf = require('./res/cv.pdf');
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,6 @@ class App extends React.Component {
       current_page: 'chat',
     };
   }
-
 
   render() {
     let page = null;
@@ -43,9 +44,7 @@ class App extends React.Component {
           </Nav.Item>
           <Nav.Item
             style={{ margin: 'auto' }}
-            onClick={() => {
-              this.setState({ current_page: 'about' });
-            }}
+            onClick={() => window.open(pdf, '_blank')}
           >
             <Nav.Link style={{
               bold: 'true', 'font-size': 34, padding: '50px', color: 'palevioletred',
