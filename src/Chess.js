@@ -126,8 +126,7 @@ class Chess extends React.Component { // eslint-disable-line
         />
 
         <div3>
-
-          blabalblala
+          
         </div3>
 
       </div>
