@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "747016228485858a0278e16337463d49",
+    "revision": "1a696e64c1fb3db8539eb2ca41407a83",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.3661fc73.chunk.css"
   },
   {
-    "revision": "5853fadb91b176fc46b0",
+    "revision": "023e9582185ad827bd85",
     "url": "/static/css/main.69eda509.chunk.css"
   },
   {
@@ -20,15 +20,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5582ea58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5853fadb91b176fc46b0",
-    "url": "/static/js/main.d90f17cb.chunk.js"
+    "revision": "023e9582185ad827bd85",
+    "url": "/static/js/main.4542e551.chunk.js"
   },
   {
     "revision": "fd5241efd20f9c7180ac",
     "url": "/static/js/runtime-main.12dae14b.js"
   },
   {
-    "revision": "af4daf8720daf5a51aec46c322449ff9",
-    "url": "/static/media/cv.af4daf87.pdf"
+    "revision": "7c779f1c3fbccb4b92f0ca88725e31b6",
+    "url": "/static/media/Ivancescu Ana-Maria CV.7c779f1c.pdf"
   }
 ]);
