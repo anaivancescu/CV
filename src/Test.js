@@ -1,7 +1,5 @@
 import React from 'react';
-import { ChatFeed, Message } from 'react-chat-ui';
-
-// import { ListGroup } from 'react-bootstrap';
+import { ChatFeed, } from 'react-chat-ui';
 
 const mockMesaje = [{
   sender: 'string', // bot sau vizitator

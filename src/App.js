@@ -1,9 +1,8 @@
 import React from 'react';
-import { Button, Card, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 import Chat from './Chat';
 import About from './About';
-import Chess from './Chess';
 
 const pdf = require('./res/cv.pdf');
 
@@ -20,8 +19,6 @@ class App extends React.Component {
     let page = null;
     if (this.state.current_page === 'chat') {
       page = (<Chat />);
-    } else if (this.state.current_page === 'chess') {
-      page = (<Chess />);
     } else {
       page = (<About />);
     }
@@ -51,19 +48,6 @@ class App extends React.Component {
             }}
             >
               CV
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item
-            style={{ margin: 'auto' }}
-            onClick={() => {
-              this.setState({ current_page: 'chess' });
-            }}
-          >
-            <Nav.Link style={{
-              bold: 'true', 'font-size': 34, padding: '50px', color: 'palevioletred',
-            }}
-            >
-              Chess
             </Nav.Link>
           </Nav.Item>
         </Nav>

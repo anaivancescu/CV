@@ -93,7 +93,7 @@ class Chat extends React.Component { // eslint-disable-line
 
     if (sender === 'user' && this.state.terminat) {
       const items = ['Hei, gata, asta a fost', 'Hei, s-a terminat',
-        'Gata DEMO-ul', 'Doar atat am fost programat sa fac...', 'lasa-ma in pace', 'termina, te rog'];
+        'Gata DEMO-ul', 'Doar atat am fost programat sa fac...', 'lasa-ma in pace'];
 
       setTimeout(() => { this.addNewMessage(items[Math.floor(Math.random() * items.length)], 'bot'); }, 500);
     }
